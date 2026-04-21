@@ -150,57 +150,39 @@ function createCard(tool, index) {
 
 function getCategoryIcon(category) {
   const icons = {
-    'Chatbot': {
+    'Large Language Models': {
       gradient: 'from-violet-500 to-purple-600',
       shadow:   'shadow-violet-500/20',
       badgeColor: 'bg-violet-500/10 text-violet-300',
       svg: '<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/></svg>'
     },
-    'Image Generation': {
+    'Image Generators': {
       gradient: 'from-pink-500 to-rose-600',
       shadow:   'shadow-pink-500/20',
       badgeColor: 'bg-pink-500/10 text-pink-300',
       svg: '<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0 0 22.5 18.75V5.25A2.25 2.25 0 0 0 20.25 3H3.75A2.25 2.25 0 0 0 1.5 5.25v13.5A2.25 2.25 0 0 0 3.75 21ZM16.5 7.5h.008v.008H16.5V7.5Z"/></svg>'
     },
-    'Code Assistant': {
-      gradient: 'from-emerald-500 to-teal-600',
-      shadow:   'shadow-emerald-500/20',
-      badgeColor: 'bg-emerald-500/10 text-emerald-300',
-      svg: '<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>'
-    },
-    'Writing': {
-      gradient: 'from-amber-500 to-orange-600',
-      shadow:   'shadow-amber-500/20',
-      badgeColor: 'bg-amber-500/10 text-amber-300',
-      svg: '<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"/></svg>'
-    },
-    'Video': {
+    'Video Creators': {
       gradient: 'from-red-500 to-rose-600',
       shadow:   'shadow-red-500/20',
       badgeColor: 'bg-red-500/10 text-red-300',
       svg: '<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>'
     },
-    'Productivity': {
-      gradient: 'from-sky-500 to-blue-600',
-      shadow:   'shadow-sky-500/20',
-      badgeColor: 'bg-sky-500/10 text-sky-300',
-      svg: '<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z"/></svg>'
+    'Coding Assistants': {
+      gradient: 'from-emerald-500 to-teal-600',
+      shadow:   'shadow-emerald-500/20',
+      badgeColor: 'bg-emerald-500/10 text-emerald-300',
+      svg: '<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>'
     },
-    'Search': {
-      gradient: 'from-indigo-500 to-blue-600',
-      shadow:   'shadow-indigo-500/20',
-      badgeColor: 'bg-indigo-500/10 text-indigo-300',
-      svg: '<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>'
-    },
-    'Speech': {
-      gradient: 'from-fuchsia-500 to-purple-600',
-      shadow:   'shadow-fuchsia-500/20',
-      badgeColor: 'bg-fuchsia-500/10 text-fuchsia-300',
-      svg: '<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"/></svg>'
+    'AI for Healthcare': {
+      gradient: 'from-cyan-500 to-blue-600',
+      shadow:   'shadow-cyan-500/20',
+      badgeColor: 'bg-cyan-500/10 text-cyan-300',
+      svg: '<svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/></svg>'
     }
   };
 
-  return icons[category] || icons['Search']; // fallback to Search icon
+  return icons[category] || icons['Large Language Models'];
 }
 
 function getPricingColor(pricing) {
