@@ -254,6 +254,33 @@ body {
   opacity: 1;
 }
 
+.hf-model-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: radial-gradient(
+    400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(168, 85, 247, 0.06),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.hf-model-card:hover::before {
+  opacity: 1;
+}
+
+/* ── Line clamp utility (for model descriptions) ── */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* ── Focus styles for accessibility ────── */
 *:focus-visible {
   outline: 2px solid rgba(99, 102, 241, 0.6);

@@ -129,7 +129,8 @@ function initScrollAnimations() {
    Card Mouse Glow Effect
    ────────────────────────────────────────── */
 function initCardGlow() {
-  const cards = document.querySelectorAll('.tool-card');
+  const selectors = '.tool-card, .hf-model-card';
+  const cards = document.querySelectorAll(selectors);
   if (!cards.length) return;
 
   cards.forEach((card) => {

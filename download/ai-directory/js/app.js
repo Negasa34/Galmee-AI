@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchAndRenderTools();
   initFilterButtons();
   initSearchFunctionality();
+  initHuggingFaceModels(); // ← Hugging Face live models
   console.log('🤖 AI Directory loaded successfully!');
 });
 
