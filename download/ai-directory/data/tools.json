@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "ChatGPT",
+    "category": "Chatbot",
+    "description": "OpenAI's conversational AI assistant for text generation, Q&A, and creative writing.",
+    "url": "https://chat.openai.com",
+    "pricing": "Freemium",
+    "tags": ["text", "chatbot", "writing", "coding"]
+  },
+  {
+    "id": 2,
+    "name": "Midjourney",
+    "category": "Image Generation",
+    "description": "AI-powered tool that creates stunning images from text descriptions.",
+    "url": "https://midjourney.com",
+    "pricing": "Paid",
+    "tags": ["image", "art", "design", "creative"]
+  },
+  {
+    "id": 3,
+    "name": "GitHub Copilot",
+    "category": "Code Assistant",
+    "description": "AI pair programmer that suggests code completions in real-time.",
+    "url": "https://github.com/features/copilot",
+    "pricing": "Paid",
+    "tags": ["code", "development", "programming"]
+  },
+  {
+    "id": 4,
+    "name": "DALL-E 3",
+    "category": "Image Generation",
+    "description": "OpenAI's latest text-to-image generation model with high-quality output.",
+    "url": "https://openai.com/dall-e-3",
+    "pricing": "Freemium",
+    "tags": ["image", "art", "design", "creative"]
+  },
+  {
+    "id": 5,
+    "name": "Claude",
+    "category": "Chatbot",
+    "description": "Anthropic's helpful and harmless AI assistant for thoughtful conversations.",
+    "url": "https://claude.ai",
+    "pricing": "Freemium",
+    "tags": ["text", "chatbot", "writing", "analysis"]
+  }
+]
