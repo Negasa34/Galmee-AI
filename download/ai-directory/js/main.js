@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSearchOverlay();
   initScrollAnimations();
   initSmoothScroll();
+  initCardGlow();
 });
 
 /* ──────────────────────────────────────────
@@ -122,6 +123,24 @@ function initScrollAnimations() {
   );
 
   animatedEls.forEach((el) => observer.observe(el));
+}
+
+/* ──────────────────────────────────────────
+   Card Mouse Glow Effect
+   ────────────────────────────────────────── */
+function initCardGlow() {
+  const cards = document.querySelectorAll('.tool-card');
+  if (!cards.length) return;
+
+  cards.forEach((card) => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty('--mouse-x', x + '%');
+      card.style.setProperty('--mouse-y', y + '%');
+    });
+  });
 }
 
 /* ──────────────────────────────────────────

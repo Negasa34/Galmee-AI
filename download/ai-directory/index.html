@@ -225,6 +225,101 @@
   </section>
 
   <!-- ============================================
+       TOOLS — Card Grid Section
+       ============================================ -->
+  <section id="tools" class="relative py-24 sm:py-32">
+
+    <!-- Subtle background glow -->
+    <div class="absolute inset-0 -z-10 pointer-events-none">
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-brand-500/5 rounded-full blur-[120px]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center mb-12" data-animate>
+        <div class="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-medium">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" />
+          </svg>
+          AI Tools Directory
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4">
+          <span class="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+            Explore Top AI Tools
+          </span>
+        </h2>
+        <p class="max-w-2xl mx-auto text-gray-400 text-lg">
+          Discover and compare the best artificial intelligence tools across every category. Each tool is curated and reviewed to help you make informed decisions.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-12" data-animate>
+        <button class="filter-btn active px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300" data-filter="all">
+          All Tools
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300" data-filter="Chatbot">
+          Chatbots
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300" data-filter="Image Generation">
+          Image Gen
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300" data-filter="Code Assistant">
+          Code
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300" data-filter="Writing">
+          Writing
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300" data-filter="Video">
+          Video
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300" data-filter="Productivity">
+          Productivity
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300" data-filter="Search">
+          Search
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300" data-filter="Speech">
+          Speech
+        </button>
+      </div>
+
+      <!-- Loading Skeleton (shown while fetching) -->
+      <div id="tools-loading" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="skeleton-card rounded-2xl p-6 h-72"></div>
+        <div class="skeleton-card rounded-2xl p-6 h-72"></div>
+        <div class="skeleton-card rounded-2xl p-6 h-72"></div>
+        <div class="skeleton-card rounded-2xl p-6 h-72 hidden sm:block"></div>
+        <div class="skeleton-card rounded-2xl p-6 h-72 hidden sm:block"></div>
+        <div class="skeleton-card rounded-2xl p-6 h-72 hidden lg:block"></div>
+      </div>
+
+      <!-- Card Grid (populated by JS) -->
+      <div id="tools-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 hidden">
+        <!-- Cards injected dynamically from data.json -->
+      </div>
+
+      <!-- Empty State (shown when no results match filter) -->
+      <div id="tools-empty" class="hidden text-center py-16">
+        <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
+          <svg class="w-8 h-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-300 mb-2">No tools found</h3>
+        <p class="text-gray-500">Try adjusting your filter or search criteria.</p>
+      </div>
+
+      <!-- Results count -->
+      <div id="tools-count" class="mt-8 text-center text-sm text-gray-500 hidden">
+        Showing <span id="tools-count-number" class="text-gray-300 font-semibold">0</span> tools
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
        SEARCH OVERLAY
        ============================================ -->
   <div id="search-overlay" class="fixed inset-0 z-[60] hidden">

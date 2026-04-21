@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "ChatGPT",
+    "category": "Chatbot",
+    "description": "OpenAI's conversational AI assistant for text generation, Q&A, creative writing, and complex problem-solving across diverse domains.",
+    "url": "https://chat.openai.com",
+    "pricing": "Freemium",
+    "tags": ["text", "chatbot", "writing", "coding"],
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Midjourney",
+    "category": "Image Generation",
+    "description": "AI-powered tool that creates stunning, highly detailed images from text descriptions using cutting-edge diffusion models.",
+    "url": "https://midjourney.com",
+    "pricing": "Paid",
+    "tags": ["image", "art", "design", "creative"],
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "GitHub Copilot",
+    "category": "Code Assistant",
+    "description": "AI pair programmer that suggests real-time code completions, entire functions, and debugging help across multiple IDEs.",
+    "url": "https://github.com/features/copilot",
+    "pricing": "Paid",
+    "tags": ["code", "development", "programming"],
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "DALL-E 3",
+    "category": "Image Generation",
+    "description": "OpenAI's latest text-to-image generation model with exceptional quality, nuanced text rendering, and prompt understanding.",
+    "url": "https://openai.com/dall-e-3",
+    "pricing": "Freemium",
+    "tags": ["image", "art", "design", "creative"],
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Claude",
+    "category": "Chatbot",
+    "description": "Anthropic's helpful and harmless AI assistant designed for thoughtful, nuanced conversations and long-document analysis.",
+    "url": "https://claude.ai",
+    "pricing": "Freemium",
+    "tags": ["text", "chatbot", "writing", "analysis"],
+    "featured": true
+  },
+  {
+    "id": 6,
+    "name": "Runway ML",
+    "category": "Video",
+    "description": "Next-generation video creation suite offering AI-powered text-to-video, motion brush, and professional editing tools.",
+    "url": "https://runwayml.com",
+    "pricing": "Freemium",
+    "tags": ["video", "creative", "editing", "animation"],
+    "featured": false
+  },
+  {
+    "id": 7,
+    "name": "Jasper",
+    "category": "Writing",
+    "description": "Enterprise-grade AI content platform for generating marketing copy, blog posts, social media content, and brand voices.",
+    "url": "https://jasper.ai",
+    "pricing": "Paid",
+    "tags": ["writing", "marketing", "content", "copywriting"],
+    "featured": false
+  },
+  {
+    "id": 8,
+    "name": "Perplexity",
+    "category": "Search",
+    "description": "AI-powered search engine that provides direct, cited answers with real-time web access and source transparency.",
+    "url": "https://perplexity.ai",
+    "pricing": "Freemium",
+    "tags": ["search", "research", "information", "citations"],
+    "featured": false
+  },
+  {
+    "id": 9,
+    "name": "Notion AI",
+    "category": "Productivity",
+    "description": "Seamlessly integrated AI writing assistant within Notion that summarizes, brainstorms, drafts, and organizes your workspace.",
+    "url": "https://notion.so/product/ai",
+    "pricing": "Paid",
+    "tags": ["productivity", "writing", "workspace", "organization"],
+    "featured": false
+  },
+  {
+    "id": 10,
+    "name": "Stable Diffusion",
+    "category": "Image Generation",
+    "description": "Open-source image generation model that runs locally, offering full customization, fine-tuning, and community-driven development.",
+    "url": "https://stability.ai",
+    "pricing": "Free",
+    "tags": ["image", "open-source", "art", "design"],
+    "featured": false
+  },
+  {
+    "id": 11,
+    "name": "Whisper",
+    "category": "Speech",
+    "description": "OpenAI's robust automatic speech recognition system supporting 99 languages with near-human accuracy transcription.",
+    "url": "https://openai.com/research/whisper",
+    "pricing": "Free",
+    "tags": ["speech", "transcription", "audio", "accessibility"],
+    "featured": false
+  },
+  {
+    "id": 12,
+    "name": "Cursor",
+    "category": "Code Assistant",
+    "description": "AI-first code editor built for pair-programming with AI, featuring intelligent codebase understanding and multi-file editing.",
+    "url": "https://cursor.sh",
+    "pricing": "Freemium",
+    "tags": ["code", "editor", "development", "ide"],
+    "featured": true
+  }
+]
