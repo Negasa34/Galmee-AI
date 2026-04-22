@@ -87,8 +87,19 @@ body {
 .animation-delay-200 { animation-delay: 200ms; }
 .animation-delay-300 { animation-delay: 300ms; }
 .animation-delay-400 { animation-delay: 400ms; }
+.animation-delay-250 { animation-delay: 250ms; }
 .animation-delay-500 { animation-delay: 500ms; }
 .animation-delay-600 { animation-delay: 600ms; }
+
+/* ── Slow Pulse for Logo & Hyphen ──────── */
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
 
 /* ── Shine Effect on CTA Button ────────── */
 .shine-effect {
@@ -173,6 +184,12 @@ body {
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(99, 102, 241, 0.3);
   box-shadow: 0 0 30px rgba(99, 102, 241, 0.08);
+}
+
+/* ── Title Letter Glow Animation ────────── */
+@keyframes letter-glow {
+  0%, 100% { text-shadow: 0 0 20px rgba(99, 102, 241, 0.3); }
+  50% { text-shadow: 0 0 40px rgba(168, 85, 247, 0.5), 0 0 80px rgba(99, 102, 241, 0.2); }
 }
 
 /* ── Responsive Tweaks ─────────────────── */
