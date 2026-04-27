@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/download/ai-directory/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/download/ai-directory/$1"
+    }
+  ]
+}
